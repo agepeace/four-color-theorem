@@ -16,7 +16,7 @@ date: 2026-05-26
 
 - **定理一** 证明无三/四边形简单平面图中存在至少两个不相邻五边形面；
 - **定理二**（唯一性定理）利用 Jordan 曲线与颜色分隔引理，证明极小5-色平面图的任意5-着色中至多存在唯一的 GLFHO；
-- **定理三** 证明 GLFHO 可通过对称拼接操作在五边形邻域间转移。
+- **定理三** 证明 GLFHO 可通过对称拼接操作在5-度顶点邻域间转移。
 
 在此基础上，主证明对极小5-色平面图施行**对称拼接消解法**：
 
@@ -34,7 +34,7 @@ This paper presents a complete proof of the Four Color Theorem via a "three-theo
 
 - **Theorem 2** (Uniqueness Theorem) uses the Jordan Curve Theorem and a color-separation lemma to prove that at most one GLFHO can exist in any 5-coloring of a minimal 5-chromatic planar graph; 
 
-- **Theorem 3** proves that a GLFHO can be transferred between pentagonal neighborhoods via a symmetric splicing operation. 
+- **Theorem 3** proves that a GLFHO can be transferred between 5-degree vertex neighborhoods via a symmetric splicing operation. 
 
 The main proof applies a **symmetric splicing resolution method** to a minimal 5-chromatic planar graph: the graph G(n) containing a unique GLFHO at vertex u is symmetrically spliced with its mirror G'(n) to form H; under the mirror coloring φ_u′, Theorem 2's static uniqueness guarantees that the original side's u-neighborhood must be GLFHO-free, yielding a 4-coloring of G - {v}. The extension of this 4-coloring to the full graph G constitutes the key step requiring further rigorous justification and peer review.
 
@@ -56,7 +56,7 @@ The main proof applies a **symmetric splicing resolution method** to a minimal 5
 
 2. **定理二** 极小5-色平面图中，至多只能存在一处局部四色困难子图，不可能同时存在两处或更多。
 
-3. **定理三** 若某五边形邻域为局部四色困难子图，则该困难结构可以"转移"到图中任意其他五边形邻域。
+3. **定理三** 若某5-度顶点邻域为局部四色困难子图，则该困难结构可以"转移"到图中任意其他5-度顶点邻域。
 
 ### 核心消解机制
 

@@ -3,8 +3,8 @@ title: 平面图着色中的 Kempe 障碍传播研究
 subtitle: 三定理路径的四色定理完整证明
 title_en: Kempe Obstruction Dynamics in Planar Graph Coloring
 subtitle_en: A Complete Proof of the Four Color Theorem via Three-Theorem Path
-author: 集体智慧
-version: v0.1
+author: 方寸山
+version: v0.2
 date: 2026-05-26
 ---
 
@@ -18,9 +18,9 @@ date: 2026-05-26
 - **定理二**（唯一性定理）利用 Jordan 曲线与颜色分隔引理，证明极小5-色平面图的任意5-着色中至多存在唯一的 GLFHO；
 - **定理三** 证明 GLFHO 可通过对称拼接操作在五边形邻域间转移。
 
-在此基础上，主证明对极小5-色平面图施行**"插入-转移-移除"宏观消解法**：
+在此基础上，主证明对极小5-色平面图施行**对称拼接消解法**：
 
-将含唯一 GLFHO 的图 G(n) 与其镜像对称拼接为 H，在镜像着色 φ_u' 下，由定理二静态唯一性保证原侧 u 邻域必然无 GLFHO，直接切回 G 侧即得4-着色。三条定理相互支撑，证明框架完整严格。
+将含唯一 GLFHO 的图 G(n) 与其镜像对称拼接为 H，在镜像着色 φ_u' 下，由定理二静态唯一性保证原侧 u 邻域必然无 GLFHO，切回 G 侧即得 G - {v} 的4-着色。从该4-着色扩展至整个 G 的严格论证是本文征求同行评议的核心内容。
 
 **关键词：** 四色定理；平面图着色；Kempe 链；局部四色困难子图（GLFHO）；极小5-色图；图论
 
@@ -36,7 +36,7 @@ This paper presents a complete proof of the Four Color Theorem via a "three-theo
 
 - **Theorem 3** proves that a GLFHO can be transferred between pentagonal neighborhoods via a symmetric splicing operation. 
 
-The main proof applies a **"Insert–Transfer–Remove" Macro Resolution Method** to a minimal 5-chromatic planar graph: the graph G(n) containing a unique GLFHO at u is symmetrically spliced with its mirror G'(n) to form H; under the mirror coloring φ_u′, Theorem 2's static uniqueness guarantees that the original side u must be GLFHO-free; cutting back to G-side yields a 4-coloring. The three theorems mutually support each other, forming a complete and rigorous proof framework.
+The main proof applies a **symmetric splicing resolution method** to a minimal 5-chromatic planar graph: the graph G(n) containing a unique GLFHO at vertex u is symmetrically spliced with its mirror G'(n) to form H; under the mirror coloring φ_u′, Theorem 2's static uniqueness guarantees that the original side's u-neighborhood must be GLFHO-free, yielding a 4-coloring of G - {v}. The extension of this 4-coloring to the full graph G constitutes the key step requiring further rigorous justification and peer review.
 
 **Keywords:** Four Color Theorem; planar graph coloring; Kempe chains; locally four-color-hard obstruction (GLFHO); minimal 5-chromatic graph; graph theory
 
@@ -60,9 +60,13 @@ The main proof applies a **"Insert–Transfer–Remove" Macro Resolution Method*
 
 ### 核心消解机制
 
-以上三条定理共同支撑了四色定理的最终证明：若某平面图存在局部四色困难子图，则通过施用定理三，可以将困难结构转移至一个可以被直接消除的位置，从而四色定理得证。这个"插入-转移-移除"的宏观操作对应：
+以上三条定理共同支撑了四色定理的证明路径。其核心机制为**对称拼接消解法**：
 
-- **插入**：在含 GLFHO 的图中引入一个辅助五边形
-- **转移**：通过定理三的对称拼接，将 GLFHO 转移到新五边形
-- **移除**：删除辅助五边形后，原图直接得到4-着色
+1. **消解**：对极小5-色图 G 中唯一的 GLFHO（中心为5-度顶点 u），选取另一个与 u 不相邻的5-度顶点 v，通过定理三的对称拼接构造，获得 G - {v} 的正常4-着色，且该着色下 u 处无 GLFHO。
+
+2. **扩展**：从 G - {v} 的4-着色扩展到 G 的4-着色。由于 v 是5-度顶点（5个邻居使用至多4种颜色），需对 v 的邻域进行 Kempe 链分析以完成扩展。
+
+### 关于本文的状态
+
+本文提出一条四色定理的证明路径。核心论证（特别是定理二中 C2b、C3 情形的严格排除）尚待同行评议与形式化验证。作者欢迎对证明中任何步骤的质疑与改进建议。
 

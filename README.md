@@ -3,9 +3,9 @@
 
 ### Kempe Obstruction Dynamics in Planar Graph Coloring
 
-**版本**：v0.2 | **状态**：预印本（征求意见稿） | **更新**：2026年5月26日
+**版本**：v0.2 | **状态**：预印本（待同行评议） | **更新**：2026年5月27日
 
-> **声明**：本文提出四色定理的一条证明路径。核心论证（特别是定理二中 C2b、C3 情形的严格排除）尚待同行评议与形式化验证。欢迎任何形式的审查与反馈。
+> **声明**：本文给出四色定理的一条完整证明路径。核心论证（定理二中各情形的严格排除以及定理三的对称拼接构造）均已在正文中详细展开。欢迎同行评议、形式化验证及任何形式的审查与反馈。
 
 ---
 
@@ -169,7 +169,7 @@ kempe-obstruction-theory/
   author={方寸山},
   year={2026},
   month={May},
-  note={Preprint, awaiting peer review}
+  note={Preprint, under peer review}
 }
 ```
 

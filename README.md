@@ -3,7 +3,7 @@
 
 ### Kempe Obstruction Dynamics in Planar Graph Coloring
 
-**版本**：v0.3 | **状态**：预印本（待同行评议） | **更新**：2026年5月28日
+**版本**：v0.2 | **状态**：预印本（待同行评议） | **更新**：2026年5月28日
 
 > **声明**：本文给出四色定理的一条完整证明路径。核心论证（定理一中各情形的严格排除以及定理二的对称拼接构造）均已在正文中详细展开。欢迎同行评议、形式化验证及任何形式的审查与反馈。
 
@@ -89,8 +89,8 @@ Kempe 在 1879 年尝试证明四色定理，但在处理5-度顶点时做了一
 ### 对称拼接消解法 / Symmetric Splicing Resolution
 
 ```
-第一步：增扩      → 在 GLFHO 中心 u 的邻居另一侧增扩五边形面 V
-Step 1: Augment   → Augment a pentagonal face V on the far side of u's neighbor
+第一步：增扩      → 在 GLFHO 中心 u 的邻居另一侧增扩五边形面 v
+Step 1: Augment   → Augment a pentagonal face v on the far side of u's neighbor
         ↓
 第二步：对称拼接  → 将增扩后的图与其副本沿 v 的边界粘合为 H
 Step 2: Splice    → Glue the augmented graph and its copy along v's boundary to form H
